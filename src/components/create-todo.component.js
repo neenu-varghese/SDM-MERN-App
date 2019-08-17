@@ -55,13 +55,13 @@ export default class CreateTodo extends Component {
         axios.post('http://localhost:4000/todos/add', newTodo)
             .then(res => console.log(res.data));
 
-        this.setState({                                                                             7
-            todo_description: '',
-            todo_responsible: '',
-            todo_priority: '',
-            todo_completed: false
-        })
-    }
+            this.state = {
+                todo_description: '',
+                todo_responsible: '',
+                todo_priority: '',
+                todo_completed: false
+            }
+        }
 
     render() {
         return (

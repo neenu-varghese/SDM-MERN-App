@@ -16,8 +16,8 @@
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "start": "node Server/server",
-    "test": "mocha Server/test/test-server.js --exit"
+    "start": "node backend/server",
+    "test": "mocha backend/test/test-server.js --exit"
   },
   "eslintConfig": {
     "extends": "react-app"
